@@ -31,9 +31,9 @@ const Card = (props) => {
                 <strong className='item-name'>{props.item.content}</strong>
             </div>
             <div className='item-cont2'>
-              {props.droppableId ==='list'?"": <button className='item-delete btn btn-danger' onClick={()=> deleteCard(props.index, props.droppableId, props.columns, props.setColumns)}><i className="material-icons">
+              {props.droppableId ==='list'?"": <button className='item-delete btn btn-danger' onClick={()=> deleteCard(props.index, props.droppableId, props.columns, props.setColumns)}>
               close
-              </i></button>} 
+              </button>} 
             </div>
         </div>
       );
